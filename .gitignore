@@ -1,0 +1,146 @@
+# =========================
+# Dependencies
+# =========================
+
+node_modules/
+**/node_modules/
+
+
+# =========================
+# Environment variables
+# =========================
+
+.env
+.env.*
+!.env.example
+
+
+# =========================
+# Vite / Frontend cache
+# =========================
+
+.vite/
+.vite-inspect/
+dist/
+dist-ssr/
+
+
+# =========================
+# Build files
+# =========================
+
+build/
+out/
+
+
+# =========================
+# Logs
+# =========================
+
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+
+# =========================
+# TypeScript
+# =========================
+
+*.tsbuildinfo
+
+
+# =========================
+# Testing / Coverage
+# =========================
+
+coverage/
+
+
+# =========================
+# Editor settings
+# =========================
+
+**/.vscode/
+
+.idea/
+
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+
+# =========================
+# OS files
+# =========================
+
+.DS_Store
+Thumbs.db
+.AppleDouble
+.LSOverride
+
+
+# =========================
+# Temporary files
+# =========================
+
+*.tmp
+*.temp
+*.cache
+*~
+
+
+# =========================
+# Package managers
+# =========================
+
+.pnpm-store/
+.yarn/
+.yarn-cache/
+
+
+# =========================
+# Local database files
+# =========================
+
+*.sqlite
+*.sqlite3
+*.db
+
+
+# =========================
+# Debug files
+# =========================
+
+debug/
+*.pid
+*.seed
+
+
+# =========================
+# Uploads / generated files
+# =========================
+
+uploads/
+storage/
+tmp/
+
+
+# =========================
+# Supabase local development
+# =========================
+
+.supabase/
+
+
+# =========================
+# Backup files
+# =========================
+
+*.bak
+*.backup

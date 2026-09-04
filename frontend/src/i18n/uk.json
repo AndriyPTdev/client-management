@@ -1,0 +1,41 @@
+{
+    "language": {
+        "en": "Англійська",
+        "pt": "Португальська",
+        "uk": "Українська"
+    },
+    "buttons": {
+        "submit": "Відправити",
+        "cancel": "Скасувати",
+        "edit": "Редагувати",
+        "delete": "Видалити"
+    },
+    "messages": {
+        "welcome": "Ласкаво просимо",
+        "clientAdded": "Клієнта додано",
+        "clientDeleted": "Клієнта видалено",
+        "errorRequiredField": "Поле обов’язкове для заповнення",
+        "successSaved": "Дані збережено"
+    },
+    "labels": {
+        "clientName": "Ім’я клієнта",
+        "phone": "Телефон",
+        "email": "Електронна пошта",
+        "tariff": "Тариф",
+        "notes": "Примітки"
+    },
+    "placeholders": {
+        "enterName": "Введіть ім’я",
+        "enterPhone": "Введіть телефон",
+        "enterEmail": "Введіть email"
+    },
+    "titles": {
+        "clientList": "Список клієнтів",
+        "addClient": "Додати клієнта",
+        "editClient": "Редагувати клієнта"
+    },
+    "errors": {
+        "notFound": "Не знайдено",
+        "network": "Помилка мережі"
+    }
+}

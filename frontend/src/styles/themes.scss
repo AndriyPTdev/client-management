@@ -1,0 +1,98 @@
+// src/styles/themes.scss
+
+:root {
+  // ==========================================
+  // ☀️ LIGHT THEME (Твоя нова лавандово-синя палітра)
+  // ==========================================
+  &[data-theme="light"] {
+    // === BRAND & ACCENT ===
+    --color-primary: hsl(228, 55%, 74%);         // $brand-default (М'який лавандовий)
+    --color-primary-hover: hsl(228, 40%, 64%);   // $brand-dark
+    --color-accent: hsl(226, 22%, 45%);          // $accent-default
+    --color-accent-hover: hsl(226, 27%, 37%);    // $accent-dark
+
+    // === BACKGROUNDS (Лейаут) ===
+    --bg-app: hsl(0, 0%, 98%);                   // $bg-page (Чистий світлий фон системи)
+    --bg-card: hsl(0, 0%, 100%);                 // $bg-surface (Білий для Sidebar/Header/Карток)
+    --bg-sunken: hsl(0, 0%, 87%);                 // $bg-sunken (Для інпутів)
+
+    // === TEXTS ===
+    --text-main: hsl(0, 0%, 14%);                // $text-heading (Графітовий чорний)
+    --text-body: hsl(0, 0%, 23%);                // $text-body (Основний текст)
+    --text-muted: hsl(0, 0%, 53%);               // $text-muted (Приглушений сірий)
+    --text-inverse: hsl(0, 0%, 100%);            // $text-inverse
+    --text-link: hsl(228, 55%, 74%);             // $text-link
+
+    // === BORDERS ===
+    --border-color: hsl(0, 0%, 87%);            // $border-default (Акуратна світла лінія)
+    --border-strong: hsl(0, 0%, 75%);            // $border-strong
+
+    // === COMPONENT TOKENS ===
+    --btn-primary-bg: hsl(228, 55%, 74%);        // $button-primary
+    --btn-primary-hover: hsl(228, 40%, 64%);     // $button-primary-hover
+    --btn-primary-text: hsl(240, 6%, 10%);       // $button-primary-text (Темний текст)
+
+    --card-bg: hsl(0, 0%, 100%);                 // $card-bg
+    --card-border: hsl(0, 0%, 87%);             // $card-border
+
+    // === SHADOWS ===
+    --shadow-main: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); // $shadow-md
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);   // $shadow-lg
+  }
+
+  // ==========================================
+  // 🌙 DARK THEME (Адаптована інверсія під нову гамму)
+  // ==========================================
+  &[data-theme="dark"] {
+    // === BRAND & ACCENT ===
+    --color-primary: hsl(228, 55%, 74%);
+    --color-primary-hover: hsl(228, 65%, 80%);
+    --color-accent: hsl(227, 29%, 64%);
+    --color-accent-hover: hsl(228, 55%, 74%);
+
+    // === BACKGROUNDS ===
+    --bg-app: hsl(0, 0%, 5%);                    // $neutral-900 (Глибокий нічний фон)
+    --bg-card: hsl(0, 0%, 14%);                  // $neutral-800 (Темні плашки)
+    --bg-sunken: hsl(0, 0%, 23%);                // $neutral-700
+
+    // === TEXTS ===
+    --text-main: hsl(0, 0%, 100%);
+    --text-body: hsl(0, 0%, 87%);
+    --text-muted: hsl(0, 0%, 64%);
+    --text-inverse: hsl(0, 0%, 14%);
+    --text-link: hsl(228, 55%, 74%);
+
+    // === BORDERS ===
+    --border-color: hsl(0, 0%, 23%);            // $neutral-700
+    --border-strong: hsl(0, 0%, 33%);
+
+    // === COMPONENT TOKENS ===
+    --btn-primary-bg: hsl(228, 55%, 74%);
+    --btn-primary-hover: hsl(228, 65%, 80%);
+    --btn-primary-text: hsl(0, 0%, 5%);
+
+    --card-bg: hsl(0, 0%, 14%);
+    --card-border: hsl(0, 0%, 23%);
+
+    // === SHADOWS ===
+    --shadow-main: 0 4px 20px rgba(0, 0, 0, 0.5);
+    --shadow-lg: 0 10px 30px rgba(0, 0, 0, 0.6);
+  }
+
+  // ==========================================
+  // 📐 ГЛОБАЛЬНІ КОНСТАНТИ (З твого списку)
+  // ==========================================
+  --radius-sm: 4px;
+  --radius-md: 6px;                              // $radius-md
+  --radius-lg: 8px;                              // $radius-lg
+  --radius-xl: 12px;
+  --radius-full: 9999px;
+
+  --spacing-1: 4px;
+  --spacing-2: 8px;
+  --spacing-3: 12px;
+  --spacing-4: 16px;
+  --spacing-5: 20px;
+  --spacing-6: 24px;                             // $card-padding
+  --spacing-8: 32px;
+}

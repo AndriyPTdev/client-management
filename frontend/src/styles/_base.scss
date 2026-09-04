@@ -1,0 +1,16 @@
+html {
+  height: 100%;
+  box-sizing: border-box;
+  
+  /* Твій фірмовий гумовий адаптив з минулого проекту */
+  @include mediaMin(1501) { font-size: 16px; }
+  @include mediaMinMax(1401, 1500) { font-size: 15px; }
+  @include mediaMinMax(1101, 1400) { font-size: 14px; }
+  @include mediaMax(1100) { font-size: 16px; }
+  
+  @include mediaMinMax(801, 1100) { font-size: get-vw-by-layout(16px, 1024); }
+  @include mediaMinMax(701, 800)  { font-size: get-vw-by-layout(16px, 768); }
+  @include mediaMinMax(501, 700)  { font-size: get-vw-by-layout(16px, 600); }
+  @include mediaMinMax(401, 500)  { font-size: get-vw-by-layout(16px, 415); }
+  @include mediaMax(400)          { font-size: get-vw-by-layout(16px, 375); }
+}

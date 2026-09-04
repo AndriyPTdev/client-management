@@ -1,0 +1,27 @@
+.guest-layout {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    width: 100%;
+}
+
+header,
+footer,
+main {
+    padding: 40px 20px;
+
+    @include mediaMax(400) {
+        padding: 20px 10px;
+    }
+}
+
+header,
+footer {
+
+    border: 1px solid var(--border-color);
+    background-color: var(--bg-card);
+}
+
+footer {
+    text-align: center;
+}

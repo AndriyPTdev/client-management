@@ -1,0 +1,14 @@
+/* Підключаємо тему та оригінальний нормалайз */
+@use './themes' as *;
+@use './normalize' as *;
+
+/* Базові стилі для серця нашого застосунку */
+body {
+  display: flex;
+  background-color: var(--bg-app);
+  color: var(--text-main);
+  font-family: system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  width: 100%;
+  border: 1px solid #ff0303;
+}

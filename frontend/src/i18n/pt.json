@@ -1,0 +1,41 @@
+{
+  "language": {
+    "en": "Ingles",
+    "pt": "Portugues",
+    "uk": "Ukraniana"
+  },
+  "buttons": {
+    "submit": "Enviar",
+    "cancel": "Cancelar",
+    "edit": "Editar",
+    "delete": "Excluir"
+  },
+  "messages": {
+    "welcome": "Bem-vindo",
+    "clientAdded": "Cliente adicionado",
+    "clientDeleted": "Cliente excluído",
+    "errorRequiredField": "Este campo é obrigatório",
+    "successSaved": "Dados salvos com sucesso"
+  },
+  "labels": {
+    "clientName": "Nome do cliente",
+    "phone": "Telefone",
+    "email": "Email",
+    "tariff": "Tarifa",
+    "notes": "Notas"
+  },
+  "placeholders": {
+    "enterName": "Digite o nome",
+    "enterPhone": "Digite o telefone",
+    "enterEmail": "Digite o email"
+  },
+  "titles": {
+    "clientList": "Lista de clientes",
+    "addClient": "Adicionar cliente",
+    "editClient": "Editar cliente"
+  },
+  "errors": {
+    "notFound": "Não encontrado",
+    "network": "Erro de rede"
+  }
+}

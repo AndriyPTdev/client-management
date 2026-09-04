@@ -1,0 +1,31 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 64px;                 
+  padding: 0 24px;              
+  
+  /* Використовуємо ТІЛЬКИ нові змінні з themes.scss: */
+  background-color: var(--bg-card); 
+
+}
+
+.leftSection,
+.rightSection {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text-main); /* Нова змінна тексту */
+  letter-spacing: -0.02em;
+}
+
+.userProfile {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-muted); /* Нова змінна приглушеного тексту */
+}

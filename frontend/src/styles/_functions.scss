@@ -1,0 +1,6 @@
+@use "sass:math";
+
+@function get-vw-by-layout($px, $layout: 1920) {
+  $vw-context: ($layout * 0.01) * 1px;
+  @return math.div($px, $vw-context) * 1vw;
+}

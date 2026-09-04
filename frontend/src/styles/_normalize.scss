@@ -1,0 +1,196 @@
+
+*:not(svg):not(use), *:before, *:after {
+    box-sizing: border-box;
+}
+
+*:active, *:hover, *:focus, a:active, a:hover {
+    outline: none;
+}
+
+hr {
+    box-sizing: content-box;
+    display: block;
+    height: 1px;
+    border: 0;
+    padding: 0;
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+html, body {
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    letter-spacing: normal;
+    font-weight: normal;
+    font-style: normal;
+    margin: 0 auto;
+    border: none;
+    font-kerning: none;
+    text-rendering: optimizeSpeed;
+    overflow-scrolling: revert;
+    width: 100%;
+    display: flex;
+    min-height: 100%;
+    text-size-adjust: 100%;
+}
+
+/* Налаштування для кореневого тегу React (#root замість Nuxt) */
+#root {
+    width: 100%;
+    display: flex;
+    min-height: 100%;
+}
+
+main, header, footer {
+    width: 100%;
+}
+
+.disabled, [disabled], *:disabled {
+    cursor: not-allowed !important;
+    box-shadow: none !important;
+    opacity: .4;
+}
+
+span, p, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+label {
+    display: block;
+    cursor: pointer;
+    position: relative;
+}
+
+input[type="checkbox"], input[type="radio"] {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+article, aside, details, figcaption, figure, footer, header, menu, section, summary, nav {
+    display: block;
+}
+
+audio, canvas, iframe, img, video, progress {
+    border: 0;
+    vertical-align: middle;
+}
+
+audio:not([controls]), [hidden], template, input::-ms-clear, input::-webkit-inner-spin-button {
+    display: none !important;
+    height: 0;
+}
+
+abbr[title] {
+    border-bottom: 1px dotted;
+}
+
+small {
+    font-size: 80%;
+}
+
+sub, sup {
+    font-size: 70%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sup { top: -.5em; }
+sub { bottom: -.5em; }
+
+code, kbd, pre, samp {
+    font-family: monospace, monospace;
+    font-size: inherit;
+    overflow: auto;
+}
+
+select {
+    cursor: pointer;
+    text-transform: none;
+}
+
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+    -webkit-appearance: button;
+    overflow: visible;
+    cursor: pointer;
+    text-transform: none;
+}
+
+button::-moz-focus-inner, input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+td, th {
+    padding: 0;
+}
+
+legend, fieldset, input, optgroup, select, button, figure, textarea {
+    color: inherit;
+    resize: none;
+    border: none;
+    border-radius: 0;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    background: rgba(255, 255, 255, 0);
+}
+
+input, optgroup, select {
+    font-size: inherit;
+    line-height: inherit;
+}
+
+optgroup, b, strong {
+    font-weight: bold;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    display: none;
+}
+
+input[type="search"] {
+    appearance: textfield;
+}
+
+input[type='number'], input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
+    appearance: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+}
+
+header ul, footer ul, blockquote, q {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    quotes: none;
+}
+
+svg {
+    border: 0;
+    vertical-align: middle;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+use, path, svg {
+    transform-origin: 50% 50%;
+}
+
+::-webkit-file-upload-button {
+    border: none;
+    padding: 0;
+    opacity: 0;
+}

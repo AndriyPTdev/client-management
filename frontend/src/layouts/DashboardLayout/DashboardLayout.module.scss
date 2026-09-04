@@ -1,0 +1,86 @@
+// src/layouts/DashboardLayout/DashboardLayout.module.scss
+
+.layoutContainer {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden; 
+  background-color: var(--bg-app); 
+  position: relative; 
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; 
+    z-index: 9999; // Світить НА ВСЕ зверху
+
+    // НОВИЙ КОЛІР ЛІХТАРИКА: М'яке лавандово-синє неонове світло
+    background: radial-gradient(
+      500px circle at var(--mouse-x, 0px) var(--mouse-y, 0px),
+      rgba(151, 166, 225, 0.15) 0%,   // Центр підсвічування ($shadow-brand)
+      rgba(90, 102, 142, 0.05) 50%,   // Плавне згасання
+      transparent 100%
+    );
+    
+    opacity: 0;
+    transition: opacity 0.4s ease;
+  }
+}
+
+:global([data-theme="dark"]) {
+  .layoutContainer::before {
+    opacity: 1;
+  }
+}
+
+.sidebarStub {
+  background-color: var(--bg-card); 
+  border-right: 1px solid var(--border-color); 
+  width: 260px; 
+  height: 100vh;
+}
+
+.mainWrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.headerStub {
+  background-color: var(--bg-card); 
+  border-bottom: 1px solid var(--border-color); 
+  height: 70px; 
+  display: flex;
+  align-items: center;
+}
+
+.contentZone {
+  flex: 1;
+  overflow-y: auto; 
+  padding: 30px;
+  color: var(--text-main);
+}
+
+@include mediaMax(768) {
+  .layoutContainer {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto; 
+  }
+
+  .sidebarStub {
+    width: 100%;
+    height: 60px;
+    border-right: none;
+    border-top: 1px solid var(--border-color);
+  }
+
+  .layoutContainer::before {
+    display: none; // Вимикаємо на телефонах
+  }
+}
